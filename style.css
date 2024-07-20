@@ -1,0 +1,103 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+
+* {
+    margin: 0;
+    padding: 0px;
+}
+
+body{
+    /* background-image: url(uplifting-rays-of-sunshine-wallpaper-preview.jpg); */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    font-family: 'Poppins', sans-serif;
+}
+
+body.sunny {
+    background-image: url('sunny.jpg');
+}
+
+body.cloudy {
+    background-image: url('cloudy.jpg');
+}
+
+body.rainy {
+    background-image: url('rainy.jpg');
+}
+
+body.snowy {
+    background-image: url('snowy.jpg');
+}
+
+#weatherIcon {
+    width: 100px; /* İkonun genişliğini ayarlayın */
+    height: 100px; /* İkonun yüksekliğini ayarlayın */
+    margin-top: 20px; /* Üstten boşluk ekleyin */
+    display: block; /* İkonun bloğu kaplamasını sağlar */
+    margin-left: auto; /* Sol tarafa otomatik boşluk bırakır */
+    margin-right: auto; /* Sağ tarafa otomatik boşluk bırakır */
+    
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+}
+
+.app{
+    width: 400px;
+    background-color: rgb(220, 220, 219);
+    padding: 20px;
+    border-radius: 10px;
+    margin-top: 40px;
+    opacity: 0.8;
+    box-shadow: 10px 1px 14px rgb(196, 60, 60);
+}
+
+.header{
+    width: 100%;
+    align-items: center;
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+}
+
+.title{
+    color: rgb(27, 134, 227);
+    margin-top: 10px;
+}
+
+#searchInput{
+    padding: 10px;
+    width: 100%;
+    margin-top: 25px;
+    text-align: center;
+    font-size: 20px;
+    border: none;
+    outline: auto;
+    background-color: transparent;
+    border-bottom: 2px solid grey;
+    box-shadow: 10px 5px 50px lightgrey;
+}
+
+.content{
+    margin-top: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.cityName{
+    font-size: 40px;
+}
+
+.degree{
+    color: rgb(24, 24, 24);
+    margin-top: 5px;
+    font-size: 75px;
+}
+
